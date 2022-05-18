@@ -32,15 +32,8 @@
             $Invoice = $_REQUEST['Invoice'];
             $Purpose = $_REQUEST['Purpose'];
 
+            if(isset($_REQUEST['create'])) {
             $sql = "INSERT INTO database  VALUES ('$Type', '$Date','$Name','$WithPVM','$NoPVM','$Count','$Size','$Number','$Location','$Invoice','$Purpose')";
-
-            if(mysqli_query($conn, $sql)){
-                echo "Pavyko"; 
-      
-                echo nl2br("\n$Type\n $Date\n $Name\n $WithPVM\n $NoPVM\n $Count\n $Size\n $Number\n $Location\n $Invoice\n $Purpose");
-            } else{
-                echo "ERROR: $sql. " 
-                    . mysqli_error($conn);
             }
                 
         mysqli_close($conn);
