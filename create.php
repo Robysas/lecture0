@@ -26,14 +26,14 @@
        
     </div>
     <div>
-        <form action="insert.php" method="POST">
-            <input type="text" name="Name" id="Name" placeholder="Pavadinimas">
+        <form action="includes/insert.php" method="POST">
+            <input type="text" name="disable" id="disable">
             <pre></pre>
             <input type="text" name="Name" id="Name" placeholder="Pavadinimas">
             <pre></pre>
             <input type="date" name="Date">
             <pre></pre>
-            <select name="Type" id="Type">
+            <select value="Type" name="Type" id="Type">
                 <option value="Name" disabled selected hidden>Kategorijos</option>
                 <option value="USB">USB laikmenos</option>
                 <option value="Plokstes">Plokštės</option>
@@ -70,7 +70,7 @@
             <label>Gamyklinis Nr:</label> <input type="text" name="Number" id="">
             <pre></pre>
             <label>Paskirtis:</label>
-            <select name="Type" name="Location" id="Location">
+            <select value="Location" name="Location" id="Location">
                 <option value="VIKO">VIKO</option>
                 <option value="EIF">EIF</option>
                 <option value="ATF">ATF</option>
@@ -88,7 +88,7 @@
             <pre></pre>
             <input type="text" name="Purpose" id="" size="36">
             <pre></pre>
-            <button type="submit" name="create">Kurti</button>
+            <button type="submit" name="create" value="create">Kurti</button>
             <button type="reset" name="reset">Ištrinti</button>
         </form>
     </div>
